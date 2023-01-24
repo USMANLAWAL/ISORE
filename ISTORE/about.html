@@ -6,24 +6,29 @@
 	<title>About Us</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
   <link rel="icon"  href="images/istorelogo.png">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
 <header>
-<div class="topnav">
-  <div id="brand">
-    <h1><span class="highlight">I</span>store</h1>
+  <div>
+    <div id="brand" class="flex">
+      <div class="flex-child">
+        <a href="javascript:void(0);" class="topnav-icon" onclick="toggleNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="flex-child">
+        <h1><span class="highlight">I</span>store</h1>
+      </div>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="about.html">About</a>
+        <a href="doc.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </div>
   </div>
-  <nav>
-    <ul>
-      <li><a href="doc.html">Home</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-</div>
 </header>
 
 <div class="about-section">
@@ -73,5 +78,9 @@
     </div>
   </div>
 </div>
+
+<script src="script.js">
+</script>
+
 </body>
 </html>
